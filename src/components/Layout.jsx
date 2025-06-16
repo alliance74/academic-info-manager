@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useStudents } from '../hooks/useStudents';
 import StudentList from './StudentList';
 import StudentForm from './StudentForm';
+import UserProfile from './UserProfile';
 import { Button } from './ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
@@ -126,16 +127,8 @@ const Layout = () => {
               </div>
             </div>
 
-            {/* Stats Badge */}
-            <div className="hidden sm:flex items-center space-x-4">
-              <Badge variant="secondary" className="bg-blue-100 text-blue-800 border-blue-200">
-                <BarChart3 className="h-3 w-3 mr-1" />
-                {students.length} Students
-              </Badge>
-            </div>
-
-            {/* Navigation Buttons */}
-            <div className="flex items-center space-x-2">
+            {/* Center Navigation */}
+            <div className="hidden md:flex items-center space-x-2">
               {navigationItems.map((item) => (
                 <Button
                   key={item.id}
@@ -148,10 +141,39 @@ const Layout = () => {
                   }`}
                 >
                   <item.icon className="h-4 w-4" />
-                  <span className="hidden sm:inline">{item.label}</span>
+                  <span>{item.label}</span>
                 </Button>
               ))}
             </div>
+
+            {/* Right side - Stats Badge and User Profile */}
+            <div className="flex items-center space-x-4">
+              <Badge variant="secondary" className="hidden sm:flex bg-blue-100 text-blue-800 border-blue-200">
+                <BarChart3 className="h-3 w-3 mr-1" />
+                {students.length} Students
+              </Badge>
+              <UserProfile />
+            </div>
+          </div>
+
+          {/* Mobile Navigation */}
+          <div className="md:hidden flex items-center space-x-2 pb-3">
+            {navigationItems.map((item) => (
+              <Button
+                key={item.id}
+                onClick={() => setCurrentView(item.id)}
+                variant={item.active ? "default" : "ghost"}
+                size="sm"
+                className={`flex items-center gap-2 transition-all duration-200 ${
+                  item.active 
+                    ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg' 
+                    : 'hover:bg-gray-100'
+                }`}
+              >
+                <item.icon className="h-4 w-4" />
+                <span className="text-xs">{item.label}</span>
+              </Button>
+            ))}
           </div>
         </div>
       </nav>
