@@ -1,73 +1,42 @@
-# Welcome to your Lovable project
+# 🎓 Academic Info Manager
 
-## Project info
+A modern academic information management system built with React, TypeScript, Tailwind CSS, and Vite. Designed to simplify the organization, access, and administration of student records and academic operations.
 
-**URL**: https://lovable.dev/projects/ad6f187a-4da9-4164-95c3-2db0fc0cf660
+---
 
-## How can I edit this code?
+## 📖 Description
 
-There are several ways of editing your application.
+**Academic Info Manager** is a web-based application that enables schools, colleges, and institutions to manage student information efficiently. It supports features like student registration, course tracking, performance records, and role-based access for administrators, teachers, and students.
 
-**Use Lovable**
+This platform aims to improve accuracy, reduce paperwork, and streamline data workflows in educational institutions.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ad6f187a-4da9-4164-95c3-2db0fc0cf660) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
 
-**Use your preferred IDE**
+- **React** – Fast, component-based UI  
+- **TypeScript** – Strongly typed JavaScript for scalability  
+- **Vite** – Lightning-fast dev environment  
+- **Tailwind CSS** – Utility-first styling framework  
+- **shadcn/ui** – Clean, accessible UI components
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 💻 Getting Started
 
-Follow these steps:
+### Prerequisites
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Node.js (v16 or higher)  
+- npm (v8 or higher)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Installation
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+# Step 1: Navigate to your project directory
+cd academic-info-manager
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 2: Install dependencies
+npm install
+
+# Step 3: Run the development server
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/ad6f187a-4da9-4164-95c3-2db0fc0cf660) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
